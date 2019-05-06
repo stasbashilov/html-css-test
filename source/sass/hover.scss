@@ -1,35 +1,35 @@
 .glow {
-	display: inline-block;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: box-shadow;
-	transition-property: box-shadow;
-	-webkit-tap-highlight-color: $darkGrey;
-	-webkit-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px $darkGrey;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-tap-highlight-color: $darkGrey;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px $darkGrey;
 }
 
 .glow:hover {
-  	box-shadow: 0 0 8px $darkGrey;
+  box-shadow: 0 0 8px $darkGrey;
 }
 
 .grow {
-	display: inline-flex;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: -webkit-transform;
-	transition-property: transform;
-	-webkit-tap-highlight-color: $darkGrey;
-	-webkit-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px $darkGrey;
+  display: inline-flex;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-tap-highlight-color: $darkGrey;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px $darkGrey;
 }
 
 .grow:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }

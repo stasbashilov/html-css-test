@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="fonts/icomoon.woff" as="font" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- dont use in prod -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -53,68 +58,8 @@
         </div>
       </section>
       <div class="title--lg mt-100 mb-55">Latest News</div>
-      <section class="card-container container">
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="imageHolder mb-30"></div>
-          <div class="title title--xs">Crud beat ouch meretriciously</div>
-          <div class="description mt-15">
-            Then shrewd ouch so hence more broke romantically that one versus
-            and cat exited to hiccupped cringed some this since much up after
-            lizard some humorous overran that far crass evilly affluently
-            majestically bet one.
-          </div>
-        </div>
-        <a href="#" class="more-btn glow">More news</a>
+      <section class="card-container container" id="news">
+        <button class="more-btn glow">More news</button>
       </section>
       <div class="title--lg border-top pt-115 mb-55">Inside Company</div>
       <section class="galery">
@@ -225,18 +170,20 @@
       </section>
     </main>
     <footer class="footer">
-		<div class="container">
-			<div class="title--lg">
-				Sign Up for newsletter
-			  </div>
-			  <div class="title--xxs text-center mt-15 mb-30">stay informing of the last company news</div>
+      <div class="container">
+        <div class="title--lg">
+          Sign Up for newsletter
+        </div>
+        <div class="title--xxs text-center mt-15 mb-30">
+          stay informing of the last company news
+        </div>
 
-			  <div class="input-block">
-				  <input type="email" placeholder="Your email">
-				  <button type="button" class="btn btn--m">subscribe</button>
-			  </div>
-		</div>
-	</footer>
-    <script src="js/script.js"></script>
+        <div class="input-block">
+          <input type="email" placeholder="Your email" />
+          <button type="button" class="btn btn--m">subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" type="text/babel"></script>
   </body>
 </html>

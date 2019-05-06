@@ -1,67 +1,67 @@
 .btn {
-    width: 126px;
-    min-height: 33px;
-    color: $white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 14px;
-    background: $baseBlue;
-    border: 1px solid $baseBlue;
-    border-color: $baseBlue;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    cursor: pointer;
+  width: 126px;
+  min-height: 33px;
+  color: $white;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 14px;
+  background: $baseBlue;
+  border: 1px solid $baseBlue;
+  border-color: $baseBlue;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: $deepBlue;
+    border-color: $deepBlue;
+  }
+
+  &--transparent {
+    background: transparent;
 
     &:hover {
-        background: $deepBlue;
-        border-color: $deepBlue;
+      background: $baseBlue;
     }
+  }
 
-    &--transparent {
-        background: transparent;
-
-        &:hover {
-            background: $baseBlue;
-        }
-    }
-
-    &--m {
-        width: 133px;
-        height: 42px;
-        border-radius: 0;
-    }
+  &--m {
+    width: 133px;
+    height: 42px;
+    border-radius: 0;
+  }
 }
 
 .button-container {
-    .btn + .btn {
-        margin-left: 16px;
-    }
+  .btn + .btn {
+    margin-left: 16px;
+  }
 }
 
 .more-btn {
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $black;
-    background: $white;
-    text-align: center;
-    border: 2px solid $orange;
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 10; 
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+  background: $white;
+  text-align: center;
+  border: 2px solid $orange;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
 
-    &:hover {
-        background: $orange;
-        color: $white;
-    }
+  &:hover {
+    background: $orange;
+    color: $white;
+  }
 }

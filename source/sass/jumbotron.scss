@@ -1,61 +1,60 @@
 .jumbotron {
-    background: blueviolet;
-    padding-top: 270px;
-    padding-bottom: 50px;
+  background: blueviolet;
+  padding-top: 270px;
+  padding-bottom: 50px;
 
-    .title--lg, .title--s {
-        color: $white;
+  .title--lg,
+  .title--s {
+    color: $white;
+  }
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      max-width: 170px;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        color: $baseBlue;
+      }
+
+      div + div {
+        margin-top: 20px;
+        text-align: center;
+      }
     }
 
-    &-list {
-        list-style-type: none;
-        margin: 0;
-        padding-left: 0;
-        padding-top: 140px;
-        display: flex;
-        justify-content: center;
+    &__item + &__item {
+      margin-left: 70px;
+    }
+  }
 
-        &__item {
-            max-width: 170px;
-            min-height: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: $white;
-            cursor: pointer;
-
-            &:hover {
-                color: $baseBlue;
-            }
-
-            div + div {
-                margin-top: 20px;
-                text-align: center;
-            }
-        }
-
-        &__item + &__item {
-            margin-left: 70px;
-        }
+  .iconHolder {
+    &-clock {
+      background: url(/img/clock.svg);
     }
 
-    .iconHolder {   
-         
-        &-clock {
-            background: url(/img/clock.svg)
-        }
-    
-        &-star {
-            background: url(/img/star.svg)
-        }
-    
-        &-music {
-            background: url(/img/music-player.svg)
-        }
-    
-        &-house {
-            background: url(/img/house.svg)
-        }
+    &-star {
+      background: url(/img/star.svg);
     }
+
+    &-music {
+      background: url(/img/music-player.svg);
+    }
+
+    &-house {
+      background: url(/img/house.svg);
+    }
+  }
 }
-

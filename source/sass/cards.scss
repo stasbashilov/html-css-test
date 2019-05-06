@@ -1,96 +1,102 @@
 .card-container {
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .galery-card {
+  display: flex;
+  flex-direction: column;
+
+  .imageHolder--lg {
+    width: 354px;
+    height: 354px;
+    background: blue;
+    margin-bottom: 3px;
+  }
+
+  .imageHolder--s {
+    width: 175px;
+    height: 175px;
+    background: blue;
+  }
+
+  .wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-
-    .imageHolder--lg {
-        width: 354px;
-        height: 354px;
-        background: blue;
-        margin-bottom: 3px;
-    }
-
-    .imageHolder--s {
-        width: 175px;
-        height: 175px;
-        background: blue;
-    }
-
-    .wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+    justify-content: space-between;
+  }
 }
 
 .news-card {
-    min-width: 430px;
-    width: 30%;
-    padding-bottom: 70px;
+  min-width: 430px;
+  width: 30%;
+  padding-bottom: 70px;
 
-    @media (max-width: 768px) {
-        width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .imageHolder {
+    height: 288px;
+    width: 100%;
+    overflow: hidden;
+    background: blue;
+
+    img {
+      display: block;
+      width: 100%;
     }
-
-    .imageHolder {
-        height: 288px;
-        width: 100%;
-        background: yellowgreen;
-
-    }
+  }
 }
 
 .vacancies-card {
-    width: 46%;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 10px;
-    background: $grey;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 2px solid $grey;
+  width: 46%;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  background: $grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid $grey;
 
-    &:hover {
-        background: transparent;
-        border-color: $middleGrey;
+  &:hover {
+    background: transparent;
+    border-color: $middleGrey;
 
-        .icon-envelope:before, .icon-like:before, 
-        .icon-phone-call:before, .icon-placeholder:before,
-        .icon-settings:before, .icon-shopping-cart:before  {
-            color: $deepBlue;
-
-        }
+    .icon-envelope:before,
+    .icon-like:before,
+    .icon-phone-call:before,
+    .icon-placeholder:before,
+    .icon-settings:before,
+    .icon-shopping-cart:before {
+      color: $deepBlue;
     }
+  }
 
-    @media (max-width: 1024px) {
-        width: 44%;
-        margin-bottom: 25px;
-    }
+  @media (max-width: 1024px) {
+    width: 44%;
+    margin-bottom: 25px;
+  }
 
-    @media (max-width: 768px) {
-        width: 100%;
-    }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
-    .iconHolder--s + .wrapper {
-        margin-left: 40px;
-    }
+  .iconHolder--s + .wrapper {
+    margin-left: 40px;
+  }
 
-    .description {
-        color: $darkGrey;
-    }
+  .description {
+    color: $darkGrey;
+  }
 
-    .title--s {
-        text-align: left;
-    }
+  .title--s {
+    text-align: left;
+  }
 }
-
