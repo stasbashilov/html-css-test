@@ -1,0 +1,20 @@
+input[type="email"] {
+    height: 42px;
+    min-width: 310px;
+    padding-left: 20px;
+    line-height: 42px;
+    box-sizing: border-box;
+    border-color: transparent; 
+    
+
+}
+
+.input-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input + button {
+        margin-left: 15px;
+    }
+}

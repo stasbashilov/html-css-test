@@ -1,0 +1,82 @@
+%title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.title--xxs {
+  @extend %title;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.title--xs {
+  @extend %title;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  text-transform: none;
+}
+
+.title--s {
+  @extend %title;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.title--lg {
+  @extend %title;
+  font-family: "Open Sans Bold", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.icon {
+  font-family: "icomoon" !important;
+  font-size: 57px;
+  line-height: 57px;
+}
+
+.icon-envelope:before {
+  content: "\e1";
+  color: $baseBlue;
+}
+.icon-like:before {
+  content: "\e2";
+  color: $baseBlue;
+}
+.icon-phone-call:before {
+  content: "\e3";
+  color: $baseBlue;
+}
+.icon-placeholder:before {
+  content: "\e4";
+  color: $baseBlue;
+}
+.icon-settings:before {
+  content: "\e5";
+  color: $baseBlue;
+}
+.icon-shopping-cart:before {
+  content: "\e6";
+  color: $baseBlue;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $placeholderGrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholderGrey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $placeholderGrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholderGrey;
+}

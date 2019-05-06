@@ -1,0 +1,29 @@
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 465px;
+    padding-left: 0;
+
+    li + li {
+        margin-left: 40px;
+    }
+
+    li a {
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $baseBlue;
+        }
+    }
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

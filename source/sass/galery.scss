@@ -1,0 +1,17 @@
+.galery {
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.galery-card + .galery-card {
+    margin-left: 3px;
+}
+
+.galery-card:nth-child(2n) {
+    .imageHolder--lg {
+        order: 2;
+        margin-top: 3px;
+    }
+}

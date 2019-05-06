@@ -1,0 +1,53 @@
+.mb-115 {
+    margin-bottom: 115px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-55 {
+    margin-bottom: 55px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pt-115 {
+    padding-top: 115px;
+}
+
+.pb-100 {
+    padding-bottom: 100px !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $ligthGrey;
+}
+
+.border-top {
+    border-top: 1px solid $ligthGrey;
+}
+
+.iconHolder {
+    width: 88px;
+    height: 88px;
+
+    &--s {
+        width: 57px;
+        height: 57px;
+    }
+}
