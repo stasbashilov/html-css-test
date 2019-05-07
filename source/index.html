@@ -16,12 +16,12 @@
     <header class="header">
       <div class="wrapper">
         <div class="logoHolder"></div>
-        <nav>
+        <nav class="header__nav">
           <ul class="nav-list">
-            <li><a>about us</a></li>
-            <li><a>company</a></li>
-            <li><a>careers</a></li>
-            <li><a>contacts</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">about us</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">company</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">careers</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -30,46 +30,54 @@
         <button type="button" class="btn glow">sign up</button>
       </div>
     </header>
-    <main class="mb-100 border-bottom">
-      <section class="jumbotron border-bottom">
-        <div class="container">
-          <div class="title--lg">
-            Stu unger rise and fall of a pocker genius
-          </div>
-          <div class="title--s mt-15">v7 digital photo printing</div>
-          <ul class="jumbotron-list">
-            <li class="jumbotron-list__item grow">
-              <div class="iconHolder iconHolder-clock"></div>
-              <div>The Skinni On Lcd Monitors</div>
-            </li>
-            <li class="jumbotron-list__item grow">
-              <div class="iconHolder iconHolder-star"></div>
-              <div>Guidelines For Inkjet Cartridge Refill</div>
-            </li>
-            <li class="jumbotron-list__item grow">
-              <div class="iconHolder iconHolder-music"></div>
-              <div>Do A Sporting Stag Do In Birmingam</div>
-            </li>
-            <li class="jumbotron-list__item grow">
-              <div class="iconHolder iconHolder-house"></div>
-              <div>You computer Usage</div>
-            </li>
-          </ul>
+    <section class="jumbotron border-bottom">
+      <div class="container">
+        <div class="title title--lg">
+          Stu unger rise and fall of a pocker genius
         </div>
-      </section>
-      <div class="title--lg mt-100 mb-55">Latest News</div>
+        <div class="title title--s">v7 digital photo printing</div>
+        <ul class="jumbotron-list">
+          <li class="jumbotron-list__item grow">
+            <div class="iconHolder iconHolder-clock"></div>
+            <div>The Skinni On Lcd Monitors</div>
+          </li>
+          <li class="jumbotron-list__item grow">
+            <div class="iconHolder iconHolder-star"></div>
+            <div>Guidelines For Inkjet Cartridge Refill</div>
+          </li>
+          <li class="jumbotron-list__item grow">
+            <div class="iconHolder iconHolder-music"></div>
+            <div>Do A Sporting Stag Do In Birmingam</div>
+          </li>
+          <li class="jumbotron-list__item grow">
+            <div class="iconHolder iconHolder-house"></div>
+            <div>You computer Usage</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="mb-100 border-bottom main">
+      <div class="title title--lg mt-100 mb-55">Latest News</div>
       <section class="card-container container" id="news">
         <button class="more-btn glow">More news</button>
       </section>
-      <div class="title--lg border-top pt-115 mb-55">Inside Company</div>
+      <div class="title title--lg border-top pt-115 mb-55">Inside Company</div>
       <section class="galery">
+
         <div class="galery-card">
-          <div class="imageHolder--lg"></div>
-          <div class="wrapper">
-            <div class="imageHolder--s"></div>
-            <div class="imageHolder--s"></div>
+          <div class="  galery-card__img   galery-card__img--lg   imageHolder--lg"></div>
+          <div class=" galery-card__wrapper wrapper">
+            <div class=" galery-card__img   galery-card__img--s "></div>
+            <div class=" galery-card__img   galery-card__img--s"></div>
           </div>
         </div>
+
+
+
+
+
+
         <div class="galery-card">
           <div class="imageHolder--lg"></div>
           <div class="wrapper">
@@ -106,25 +114,42 @@
           </div>
         </div>
       </section>
-      <div class="title--lg pt-115 mb-55">hot vacancies</div>
-      <section class="card-container container pb-100">
+      <div class="title title--lg pt-115 mb-55">hot vacancies</div>
+
+
+
+
+
+
+      <section class="card-container container pb-100      vacancies">
+
+
+        <h3 class="vacancies__title"></h3>
+
+
         <div class="vacancies-card glow">
           <div class="iconHolder--s">
             <span class="icon icon-settings"></span>
           </div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
+
+
+
+
+
+
         <div class="vacancies-card glow">
           <div class="iconHolder--s">
             <span class="icon icon-placeholder"></span>
           </div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
@@ -134,7 +159,7 @@
           </div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
@@ -142,7 +167,7 @@
           <div class="iconHolder--s"><span class="icon icon-like"></span></div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
@@ -152,7 +177,7 @@
           </div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
@@ -162,7 +187,7 @@
           </div>
           <div class="wrapper">
             <div class="description">Then shrewd ouch so hence more brok</div>
-            <div class="title--s">Meekly bought or some blew</div>
+            <div class="title vacancies-card__title">Meekly bought or some blew</div>
             <div class="description">No image essential</div>
           </div>
         </div>
@@ -171,10 +196,10 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="title--lg">
+        <div class="title title--lg">
           Sign Up for newsletter
         </div>
-        <div class="title--xxs text-center mt-15 mb-30">
+        <div class="title title--xxs text-center mt-15 mb-30">
           stay informing of the last company news
         </div>
 

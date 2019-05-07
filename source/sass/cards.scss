@@ -34,12 +34,23 @@
   min-width: 430px;
   width: 30%;
   padding-bottom: 70px;
+  height: 555px;
 
   @media (max-width: 768px) {
     width: 100%;
   }
 
-  .imageHolder {
+  &__text {
+    font-family: 'museo300', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  &__title {
+    font-family: 'museo500', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+
+  &__img {
     height: 288px;
     width: 100%;
     overflow: hidden;
@@ -96,7 +107,8 @@
     color: $darkGrey;
   }
 
-  .title--s {
-    text-align: left;
+  &__title {
+    font-family: 'museo300', Arial, Helvetica, sans-serif;
+    font-size: 24px;
   }
 }

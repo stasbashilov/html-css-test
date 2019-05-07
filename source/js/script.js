@@ -2,11 +2,11 @@ const List = ({ list }) => {
   return list.map((item, index) => {
     return (
       <div className='news-card' key={index}>
-        <div className='imageHolder mb-30'>
+        <div className='news-card__img imageHolder mb-30'>
           <img src={`https://picsum.photos/id/10${index}/367/267`} />
         </div>
-        <div className='title title--xs'>{item.title}</div>
-        <div className='description mt-15'>{item.body}</div>
+        <div className='title title--xs news-card__title'>{item.title}</div>
+        <div className='news-card__text mt-15'>{item.body}</div>
       </div>
     );
   });
@@ -51,7 +51,7 @@ class News extends React.Component {
         <List list={this.state.viewList} />
         {viewList.length < fullList.length && (
           <button className='more-btn glow' onClick={this.handleLoadMoreClick}>
-            Load More
+            more news
           </button>
         )}
       </React.Fragment>

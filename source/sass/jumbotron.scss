@@ -1,7 +1,8 @@
 .jumbotron {
-  background: blueviolet;
+  background: url('../img/bg.png') no-repeat;
+  background-size: cover;
   padding-top: 270px;
-  padding-bottom: 50px;
+  margin-top: -70px;
 
   .title--lg,
   .title--s {
@@ -11,8 +12,7 @@
   &-list {
     list-style-type: none;
     margin: 0;
-    padding-left: 0;
-    padding-top: 140px;
+    padding: 0;
     display: flex;
     justify-content: center;
 
