@@ -1,20 +1,21 @@
 @charset "utf-8";
 @import './normalize';
+
+@import './colors.scss';
+
 @import './base.scss';
 
 @import './fonts.scss';
 
-@import './colors.scss';
-
 @import './typography.scss';
 
-@import './helpers.scss';
 @import './hover.scss';
 
 @import './header.scss';
 @import './nav.scss';
 @import './jumbotron.scss';
 @import './galery.scss';
+@import './vacancies.scss';
 @import './footer.scss';
 
 @import './buttons.scss';

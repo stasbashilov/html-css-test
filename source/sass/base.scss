@@ -4,6 +4,18 @@ body {
   font-size: 14px;
 }
 
+.main {
+  border-bottom: 1px solid $ligthGrey;
+  margin-bottom: 100px;
+  padding-top: 100px;
+
+  &__title {
+    border-top: 1px solid $ligthGrey;
+    padding-top: 115px;
+  }
+
+}
+
 .container {
   max-width: 1350px;
   margin: auto;
@@ -15,4 +27,13 @@ body {
   @media (max-width: 960px) {
     max-width: 740px;
   }
+
+  &__vacancies {
+    padding-bottom: 100px;
+  }
+}
+
+.iconHolder {
+  width: 88px;
+  height: 88px;
 }

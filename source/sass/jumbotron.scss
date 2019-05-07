@@ -1,11 +1,16 @@
 .jumbotron {
   background: url('../img/bg.png') no-repeat;
   background-size: cover;
+  border-bottom: 1px solid $ligthGrey;
   padding-top: 270px;
+  padding-bottom: 30px;
   margin-top: -70px;
 
-  .title--lg,
-  .title--s {
+  @media (max-width: 768px) {
+    margin-top: -176px;
+  }
+
+  &__title {
     color: $white;
   }
 

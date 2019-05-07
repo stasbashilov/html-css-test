@@ -1,5 +1,6 @@
 .galery {
   min-height: 540px;
+  padding-top: 55px;
   display: flex;
   justify-content: center;
   overflow-x: auto;
@@ -10,8 +11,35 @@
 }
 
 .galery-card:nth-child(2n) {
-  .imageHolder--lg {
+  .galery-card__img--lg {
     order: 2;
     margin-top: 3px;
+  }
+}
+
+.galery-card {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+
+    &--s {
+      width: 175px;
+      height: 175px;
+      background: $ligthGrey;
+    }
+
+    &--lg {
+      width: 354px;
+      height: 354px;
+      background: $ligthGrey;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
