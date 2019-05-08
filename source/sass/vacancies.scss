@@ -19,6 +19,7 @@
     align-items: center;
     margin-bottom: 20px;
     border: 2px solid $grey;
+    transition:all 0.3s ease;
 
     &__img {
         width: 57px;

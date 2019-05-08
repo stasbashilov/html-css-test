@@ -2,7 +2,7 @@
   width: 126px;
   color: $white;
   font-size: 16px;
-  font-family: "museo500", Arial, Helvetica, sans-serif;
+  font-family: 'museo500', Arial, Helvetica, sans-serif;
   padding: 8px 15px;
   text-transform: uppercase;
   text-align: center;
@@ -11,10 +11,12 @@
   border-color: $baseBlue;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background: $deepBlue;
     border-color: $deepBlue;
+    
   }
 
   &--transparent {
@@ -40,9 +42,9 @@
 
 .more-btn {
   width: 160px;
-  font-size: 16px;
-  font-family: "museo500", Arial, Helvetica, sans-serif;
-  padding: 15px;
+  font-size: 14px;
+  font-family: 'museo500', Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
   text-transform: uppercase;
   color: $black;
   background: $white;
@@ -55,6 +57,7 @@
   margin: auto;
   z-index: 10;
   text-decoration: none;
+  transition: all 0.3s ease;
 
   &:hover {
     background: $orange;

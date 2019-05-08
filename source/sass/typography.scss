@@ -10,20 +10,15 @@
 
   &--xs {
     font-family: 'museo300', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     text-transform: none;
   }
 
-  &--s {
-    font-family: 'museo300', Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-bottom: 135px;
-  }
-
-  &--lg {
-    font-family: 'museo700', Arial, Helvetica, sans-serif;
-    font-size: 44px;
+  &--large {
+    font-family: 'museo500', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
   }
 }
 

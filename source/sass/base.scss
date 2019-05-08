@@ -2,6 +2,7 @@ body {
   background: white;
   font-family: 'museo300', Arial, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .main {
@@ -13,7 +14,6 @@ body {
     border-top: 1px solid $ligthGrey;
     padding-top: 115px;
   }
-
 }
 
 .container {
@@ -31,9 +31,4 @@ body {
   &__vacancies {
     padding-bottom: 100px;
   }
-}
-
-.iconHolder {
-  width: 88px;
-  height: 88px;
 }

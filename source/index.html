@@ -40,38 +40,43 @@
     </header>
     <section class="jumbotron">
       <div class="container">
-        <div class="title title--lg jumbotron__title">
+        <div class="jumbotron__title">
           Stu unger rise and fall of a pocker genius
         </div>
-        <div class="title title--s jumbotron__title">
+        <div class="jumbotron__title jumbotron__title--alt">
           v7 digital photo printing
         </div>
         <ul class="jumbotron-list">
-          <li class="jumbotron-list__item grow">
+          <li class="jumbotron-list__item">
             <div class="iconHolder iconHolder-clock"></div>
-            <div>The Skinni On Lcd Monitors</div>
+            <div class="jumbotron-list__title">The Skinni On Lcd Monitors</div>
           </li>
-          <li class="jumbotron-list__item grow">
+          <li class="jumbotron-list__item">
             <div class="iconHolder iconHolder-star"></div>
-            <div>Guidelines For Inkjet Cartridge Refill</div>
+            <div class="jumbotron-list__title">
+              Guidelines For Inkjet Cartridge Refill
+            </div>
           </li>
-          <li class="jumbotron-list__item grow">
+          <li class="jumbotron-list__item">
             <div class="iconHolder iconHolder-music"></div>
-            <div>Do A Sporting Stag Do In Birmingam</div>
+            <div class="jumbotron-list__title">
+              Do A Sporting Stag Do In Birmingam
+            </div>
           </li>
-          <li class="jumbotron-list__item grow">
+          <li class="jumbotron-list__item">
             <div class="iconHolder iconHolder-house"></div>
-            <div>You computer Usage</div>
+            <div class="jumbotron-list__title">You computer Usage</div>
           </li>
         </ul>
       </div>
     </section>
+
     <main class="main">
-      <div class="title title--lg">Latest News</div>
+      <div class="title title--large">Latest News</div>
       <section class="card-container container" id="news">
         <button class="more-btn glow">More news</button>
       </section>
-      <div class="title title--lg main__title">Inside Company</div>
+      <div class="title title--large main__title">Inside Company</div>
       <section class="galery">
         <div class="galery-card">
           <div class="galery-card__img galery-card__img--lg"></div>
@@ -116,7 +121,7 @@
           </div>
         </div>
       </section>
-      <div class="title title--lg main__title">hot vacancies</div>
+      <div class="title title--large main__title">hot vacancies</div>
       <section class="container vacancies">
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
@@ -134,7 +139,7 @@
         </div>
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
-            <span class="icon icon-settings"></span>
+            <span class="icon icon-placeholder"></span>
           </div>
           <div class="vacancies-card__wrapper">
             <div class="vacancies-card__description">
@@ -148,7 +153,7 @@
         </div>
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
-            <span class="icon icon-settings"></span>
+            <span class="icon icon-shopping-cart"></span>
           </div>
           <div class="vacancies-card__wrapper">
             <div class="vacancies-card__description">
@@ -162,7 +167,7 @@
         </div>
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
-            <span class="icon icon-settings"></span>
+            <span class="icon icon-like"></span>
           </div>
           <div class="vacancies-card__wrapper">
             <div class="vacancies-card__description">
@@ -176,7 +181,7 @@
         </div>
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
-            <span class="icon icon-settings"></span>
+            <span class="icon icon-phone-call"></span>
           </div>
           <div class="vacancies-card__wrapper">
             <div class="vacancies-card__description">
@@ -190,7 +195,7 @@
         </div>
         <div class="vacancies-card glow">
           <div class="vacancies-card__img">
-            <span class="icon icon-settings"></span>
+            <span class="icon icon-envelope"></span>
           </div>
           <div class="vacancies-card__wrapper">
             <div class="vacancies-card__description">
@@ -207,15 +212,22 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="title title--lg">
+        <div class="title title--large">
           Sign Up for newsletter
         </div>
         <div class="title title--xxs footer__title">
           stay informing of the last company news
         </div>
         <div class="input-block">
-          <input type="email" placeholder="Your email" />
-          <button type="button" class="btn btn--m">subscribe</button>
+          <input
+            class="input"
+            type="email"
+            placeholder="Your email"
+            data-input="subscribe"
+          />
+          <button type="button" class="btn btn--m" data-action="subscribe">
+            subscribe
+          </button>
         </div>
       </div>
     </footer>

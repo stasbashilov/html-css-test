@@ -1,18 +1,43 @@
-input[type='email'] {
+.input {
   height: 42px;
   min-width: 310px;
   padding-left: 20px;
   line-height: 42px;
   box-sizing: border-box;
-  border-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 15px;
+
+  &.error {
+    border: 1px solid red;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
 }
 
 .input-block {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  input + button {
-    margin-left: 15px;
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }

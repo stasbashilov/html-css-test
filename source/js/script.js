@@ -1,3 +1,29 @@
+const subscribeButton = document.querySelector('[data-action="subscribe"]');
+const subscribeInput = document.querySelector('[data-input="subscribe"]');
+
+const errorClass = 'error';
+
+const validateEmail = email => {
+  const pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const testResult = pattern.test(email);
+
+  return testResult;
+};
+
+subscribeInput.addEventListener('change', () => {
+  subscribeInput.classList.remove(errorClass);
+});
+
+const handleButtonSubscribeClick = () => {
+  if (validateEmail(subscribeInput.value)) {
+    subscribeInput.classList.remove(errorClass);
+  } else {
+    subscribeInput.classList.add(errorClass);
+  }
+};
+
+subscribeButton.addEventListener('click', handleButtonSubscribeClick);
+
 const List = ({ list }) => {
   return list.map((item, index) => {
     return (
@@ -5,7 +31,7 @@ const List = ({ list }) => {
         <div className='news-card__img imageHolder mb-30'>
           <img src={`https://picsum.photos/id/10${index}/367/267`} />
         </div>
-        <div className='title title--xs news-card__title'>{item.title}</div>
+        <h3 className='news-card__title'>{item.title}</h3>
         <div className='news-card__text mt-15'>{item.body}</div>
       </div>
     );
