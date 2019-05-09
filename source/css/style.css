@@ -320,7 +320,7 @@ body {
   padding-top: 100px; }
   .main__title {
     border-top: 1px solid #e3e3e3;
-    padding-top: 115px; }
+    padding-top: 100px; }
 
 .container {
   max-width: 1350px;
@@ -646,6 +646,10 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
+  @media (max-width: 1440px) {
+    .vacancies {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   @media (max-width: 960px) {
     .vacancies {
       -webkit-box-orient: vertical;
@@ -658,9 +662,8 @@ body {
 
 .vacancies-card {
   width: 620px;
+  height: 116px;
   padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   padding-right: 10px;
   background: #f2f2f2;
   display: -webkit-box;
@@ -672,7 +675,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border: 2px solid #f2f2f2;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -687,9 +690,7 @@ body {
     font-size: 14px; }
   .vacancies-card__title {
     font-family: 'museo500', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    font-size: 20px; }
   .vacancies-card__text {
     color: #868686;
     font-family: 'museo300', Arial, Helvetica, sans-serif;
@@ -706,8 +707,7 @@ body {
       color: #1562b3; }
   @media (max-width: 1440px) {
     .vacancies-card {
-      width: 44%;
-      margin-bottom: 25px; } }
+      width: 44%; } }
   @media (max-width: 960px) {
     .vacancies-card {
       width: 616px; } }
