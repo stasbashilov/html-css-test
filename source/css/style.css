@@ -331,8 +331,6 @@ body {
   @media (max-width: 960px) {
     .container {
       max-width: 740px; } }
-  .container__vacancies {
-    padding-bottom: 100px; }
 
 @font-face {
   font-weight: normal;
@@ -454,85 +452,77 @@ body {
   padding-right: 20px;
   max-width: 1320px;
   margin: auto; }
-  @media (max-width: 1439px) {
-    .header {
-      max-width: 930px; } }
-  @media (max-width: 960px) {
-    .header {
-      max-width: 710px; } }
   @media (max-width: 768px) {
     .header {
+      max-width: 710px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
       .header div + div {
         margin-top: 70px; } }
-  .header .wrapper {
+  .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    @media (max-width: 768px) {
-      .header .wrapper {
-        width: 100%;
+    @media (max-width: 960px) {
+      .header__wrapper {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
-    .header .wrapper div + nav {
+    .header__wrapper div + nav {
       margin-left: 40px; }
-  .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+  .header__logo {
+    width: 70px;
+    height: 60px;
+    background: url(/img/layers.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5px; }
 
-.logoHolder {
-  width: 70px;
-  height: 60px;
-  background: url(/img/layers.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -5px; }
-
-.nav-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .nav-list__item {
-    padding: 18px; }
-  .nav-list__link {
-    font-size: 16px;
-    font-family: "museo500", Arial, Helvetica, sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .nav-list__link:hover {
-      color: #207cde; }
-
-.nav-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .nav-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .nav-list__item {
+      padding: 18px; }
+    .nav-list__link {
+      font-size: 16px;
+      font-family: "museo500", Arial, Helvetica, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .nav-list__link:hover {
+        color: #207cde; }
 
 .jumbotron {
   background: url("../img/bg.png") no-repeat;
@@ -541,7 +531,7 @@ body {
   padding-top: 255px;
   padding-bottom: 30px;
   margin-top: -70px; }
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .jumbotron {
       margin-top: -176px; } }
   .jumbotron__title {
@@ -580,6 +570,11 @@ body {
     .jumbotron-list__title {
       font-family: 'museo500', Arial, Helvetica, sans-serif;
       font-size: 18px; }
+    @media (max-width: 960px) {
+      .jumbotron-list {
+        width: 740px; }
+        .jumbotron-list__title {
+          font-size: 14px; } }
   .jumbotron .iconHolder {
     width: 90px;
     height: 90px;
@@ -651,9 +646,18 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
+  @media (max-width: 960px) {
+    .vacancies {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .vacancies-card {
-  width: 46%;
+  width: 620px;
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -700,13 +704,13 @@ body {
     .vacancies-card:hover .icon-settings:before,
     .vacancies-card:hover .icon-shopping-cart:before {
       color: #1562b3; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     .vacancies-card {
       width: 44%;
       margin-bottom: 25px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .vacancies-card {
-      width: 100%; } }
+      width: 616px; } }
 
 .footer {
   min-height: 300px;
@@ -773,7 +777,7 @@ body {
     background: #ff7200;
     color: white; }
 
-.card-container {
+.news {
   padding-bottom: 30px;
   padding-top: 55px;
   display: -webkit-box;
@@ -785,6 +789,15 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
+  @media (max-width: 960px) {
+    .news {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .news-card {
   min-width: 430px;

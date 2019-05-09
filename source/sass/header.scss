@@ -9,15 +9,8 @@
   max-width: 1320px;
   margin: auto;
 
-  @media (max-width: 1439px) {
-    max-width: 930px;
-  }
-
-  @media (max-width: 960px) {
-    max-width: 710px;
-  }
-
   @media (max-width: 768px) {
+    max-width: 710px;
     flex-direction: column;
 
     div + div {
@@ -25,12 +18,11 @@
     }
   }
 
-  .wrapper {
+  &__wrapper {
     display: flex;
     justify-content: flex-start;
 
-    @media (max-width: 768px) {
-      width: 100%;
+    @media (max-width: 960px) {
       justify-content: space-between;
     }
 
@@ -39,17 +31,13 @@
     }
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
+  &__logo {
+    width: 70px;
+    height: 60px;
+    background: url(/img/layers.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5px;
   }
 }
 
-.logoHolder {
-  width: 70px;
-  height: 60px;
-  background: url(/img/layers.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -5px;
-}

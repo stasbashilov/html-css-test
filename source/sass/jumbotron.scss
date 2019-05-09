@@ -6,7 +6,7 @@
   padding-bottom: 30px;
   margin-top: -70px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     margin-top: -176px;
   }
 
@@ -50,6 +50,14 @@
     &__title {
       font-family: 'museo500', Arial, Helvetica, sans-serif;
       font-size: 18px;
+    }
+
+    @media (max-width: 960px) {
+      width: 740px;
+
+      &__title {
+        font-size: 14px;
+      }
     }
   }
 
