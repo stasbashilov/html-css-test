@@ -2,7 +2,6 @@
   min-height: 540px;
   padding-top: 55px;
   display: flex;
-  justify-content: center;
   overflow-x: auto;
 }
 
@@ -22,6 +21,7 @@
   flex-direction: column;
 
   &__img {
+    overflow: hidden;
 
     &--s {
       width: 175px;
@@ -41,5 +41,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto
   }
 }
