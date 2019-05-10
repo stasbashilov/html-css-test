@@ -108,11 +108,8 @@ class Gallery extends React.Component {
   }
 
   componentDidMount() {
-    // метод компонента, который отрисовался в ДОМ, вызывается один раз после отрисовки компонента, чаще всего используется для асинхронных запросов
 
     fetch('https://jsonplaceholder.typicode.com/photos')
-      //fetch это аякс запрос
-      // метод then принимает в качестве аргумента функцию, которая в качестве аргумента принимает результат запроса
 
       .then(res => res.json())
       .then(res => {
@@ -173,5 +170,3 @@ class Gallery extends React.Component {
 }
 
 ReactDOM.render(<Gallery />, document.getElementById('galery'));
-
-// каждый вызов сетСтейт вызывает вызов метода рендер компонента
